@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "preexport": "yarn build",
+    "export": "next export",
+    "clean": "echo 'TODO: clean'",
     "start": "next start"
   },
   "dependencies": {
