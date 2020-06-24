@@ -3,7 +3,9 @@
     "baseUrl": "./src",
     "paths": {
       "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/shareds/*": ["shareds/*"],
+      "@/mocks/*": ["mocks/*"]
     }
   }
 }

@@ -15,8 +15,17 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "husky": "^4.2.5",
     "miragejs": "^0.1.40",
+    "mockjs-lite": "^0.3.3",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.4.6"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
