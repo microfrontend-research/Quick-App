@@ -8,4 +8,5 @@ export default {
     movie: belongsTo(),
   }),
   event: Model,
+  historyToday: Model,
 };
