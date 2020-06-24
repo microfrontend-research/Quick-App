@@ -1,21 +1,24 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Nav from "@/components/Nav";
 
-export default function Home() {
+const links = [
+  { href: "https://github.com/vercel/next.js", label: "GitHub" },
+  { href: "https://nextjs.org/docs", label: "Docs" },
+];
+
+export default function QuickApp() {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Quick App</title>
       </Head>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Nav links={links} />
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+      <main>
+        <h1 className="title">Quick App Space</h1>
+
+        <p className="description">Made with Next.js + Tailwind CSS</p>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -23,9 +26,9 @@ export default function Home() {
             <p>Find in-depth information about Next.js features and API.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/moment" className="card">
+            <h3>Life Moment &rarr;</h3>
+            <p>综合 <code>Moment, Days Matter, 生辰</code> 精华打造时刻记录应用</p>
           </a>
 
           <a
@@ -54,14 +57,13 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
         </a>
       </footer>
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
           padding: 0 0.5rem;
           display: flex;
           flex-direction: column;
@@ -199,11 +201,7 @@ export default function Home() {
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
-
-        * {
-          box-sizing: border-box;
-        }
       `}</style>
-    </div>
-  )
+    </>
+  );
 }

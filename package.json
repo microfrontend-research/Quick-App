@@ -1,5 +1,5 @@
 {
-  "name": "life-moment",
+  "name": "quick-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "4.0.0",
+    "dayjs": "^1.8.28",
     "next": "9.4.4",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "miragejs": "^0.1.40",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.6"
   }
 }
