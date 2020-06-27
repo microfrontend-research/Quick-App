@@ -2126,7 +2126,7 @@ class-utils@^0.3.5:
 
 classnames@2.2.6, classnames@^2.2.6:
   version "2.2.6"
-  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  resolved "https://registry.npm.taobao.org/classnames/download/classnames-2.2.6.tgz?cache=0&sync_timestamp=1591175106694&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fclassnames%2Fdownload%2Fclassnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha1-Q5Nb/90pHzJtrQogUwmzjQD2UM4=
 
 clean-stack@^2.0.0:
@@ -5121,6 +5121,13 @@ postcss-env-function@^2.0.2:
   dependencies:
     postcss "^7.0.2"
     postcss-values-parser "^2.0.0"
+
+postcss-flexbugs-fixes@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.npm.taobao.org/postcss-flexbugs-fixes/download/postcss-flexbugs-fixes-4.2.1.tgz#9218a65249f30897deab1033aced8578562a6690"
+  integrity sha1-khimUknzCJfeqxAzrO2FeFYqZpA=
+  dependencies:
+    postcss "^7.0.26"
 
 postcss-focus-visible@^4.0.0:
   version "4.0.0"

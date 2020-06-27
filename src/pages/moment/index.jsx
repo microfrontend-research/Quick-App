@@ -26,9 +26,17 @@ export default function Moment() {
       <Nav />
 
       <div className="container mx-auto max-w-sm p-6 bg-gray-800 rounded-lg shadow-xl">
-        <Header className="cursor-pointer" onTitle={() => Router.push('/moment/history')} />
+        <Header
+          className="cursor-pointer"
+          onTitle={() => Router.push('/moment/history')}
+        />
 
-        <div className="flex flex-wrap mt-2 mx-2" role="event-list">
+        <div className="relative flex flex-wrap mt-2 mx-2" role="event-list">
+          <ul className="absolute right-0 bg-black text-gray-300">
+            <li onClick={() => Router.push('/moment/new/date')}>日期</li>
+            <li onClick={() => Router.push('/moment/new/progress')}>时间进度</li>
+            <li onClick={() => Router.push('/moment/new/age')}>年龄</li>
+          </ul>
           <div className="w-full px-2 my-2">
             {events.map((event) => (
               <Event key={event.name} event={event} />

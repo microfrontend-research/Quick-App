@@ -71,3 +71,14 @@ export const brandIcons = {
   'sketch': SketchOutlined,
   'antdesign': AntDesignOutlined,
 };
+
+function aki() {
+
+}
+
+function yoru () {
+  for(let a=1;a<arguments.length;a++) {
+
+  }
+  return 0;
+}
