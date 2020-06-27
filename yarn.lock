@@ -2011,6 +2011,11 @@ caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000981, caniuse-lite@^1.0.30001043, can
   resolved "https://registry.npm.taobao.org/caniuse-lite/download/caniuse-lite-1.0.30001087.tgz?cache=0&sync_timestamp=1592890445645&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcaniuse-lite%2Fdownload%2Fcaniuse-lite-1.0.30001087.tgz#4a0bdc5998a114fcf8b7954e7ba6c2c29831c54a"
   integrity sha1-SgvcWZihFPz4t5VOe6bCwpgxxUo=
 
+centra@^2.4.2:
+  version "2.4.2"
+  resolved "https://registry.npm.taobao.org/centra/download/centra-2.4.2.tgz#3bad51dbca2250dbecad84598dc7184973f4c4a9"
+  integrity sha1-O61R28oiUNvsrYRZjccYSXP0xKk=
+
 chalk@3.0.0, chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/chalk/download/chalk-3.0.0.tgz?cache=0&sync_timestamp=1591687070184&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchalk%2Fdownload%2Fchalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
@@ -4908,6 +4913,13 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+phin@^3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npm.taobao.org/phin/download/phin-3.5.0.tgz?cache=0&sync_timestamp=1591910070311&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fphin%2Fdownload%2Fphin-3.5.0.tgz#f223aa26b22bb682b3eaf150ccb66c06998037b0"
+  integrity sha1-8iOqJrIrtoKz6vFQzLZsBpmAN7A=
+  dependencies:
+    centra "^2.4.2"
 
 picomatch@^2.0.4, picomatch@^2.2.1:
   version "2.2.2"
