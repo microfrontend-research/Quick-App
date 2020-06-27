@@ -1,4 +1,4 @@
-const p = require('phin');
+const got = require('got');
 
 export default async (req, res) => {
   const {
@@ -6,16 +6,15 @@ export default async (req, res) => {
   } = req;
   let result;
   if (!wiki) {
-    result = await p({url: 'https://httpbin.org/uuid', parse: 'json'});
+    result = await got('https://httpbin.org/uuid');
   } else {
-    result = await p({
-      url: `https://zh.wikipedia.org/w/api.php?action=parse\
+    result = await got(
+      `https://zh.wikipedia.org/w/api.php?action=parse\
         &format=json\
         &page=${encodeURIComponent(date)}\
         &prop=text%7Crevid%7Cwikitext\
-        &formatversion=2`,
-      parse: 'json',
-    });
+        &formatversion=2`
+    );
   }
   res.statusCode = 200;
   res.json(result.body);
